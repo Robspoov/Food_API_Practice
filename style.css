@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+html{
+    box-sizing: border-box; 
+    /* this will prevent entire coverage so it
+    doesn't have to scroll over */
+}
+
+body{
+    background: url('https://images.unsplash.com/photo-1473552486657-64356a22e365?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: rgb(235, 235, 235);
+    font-family: Dancing Script;
+    font-weight: 550px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.recipe-container{
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 10px 10px 10px rgba(247, 237, 237, 0.2)
+}
+
+.recipe-text{
+    font-size: 2.75rem;
+}
+
+.button-container{
+    margin-top: 15px;
+    display: right;
+    justify-content: space-between;
+   
+}
+
+.mortar-pestle{
+    font-size: .8rem;
+}
+
+button{
+    cursor: pointer;
+    font-size: 1.1rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: rgb(196, 163, 82);
+    background: rgb(218, 211, 209);
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+    font-family: Dancing Script;
+    
+    
+}
+
+button:hover{
+    filter: brightness(115%)
+}
+
+button:active{
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+@media screen and (max-width: 1000px) {
+    .recipe-container{
+        margin: auto 10px;
+    }
+
+    .recipe-text{
+        font-size: 2.5 rem;
+    }
+}
